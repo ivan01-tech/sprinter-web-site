@@ -14,6 +14,7 @@ import Projects from "@/components/Projets";
 import DigitalSolutionsSection from "@/components/DigitalSolutions";
 import ExperienceSection from "@/components/Experience";
 import ProjectsShowcase from "@/components/Proets";
+import WorkProcess from "@/components/WorkProcess";
 
 export default function Home() {
   return (
@@ -26,15 +27,17 @@ export default function Home() {
           <Hero />
           <Pricing />
           <Ticker />
-          <Projects />
+          {/* <Projects /> */}
 
-          <ClientSolutions />
+          {/* <ClientSolutions /> */}
 
           <DigitalSolutionsSection></DigitalSolutionsSection>
 
           <ExperienceSection></ExperienceSection>
 
-          <ProjectsShowcase></ProjectsShowcase>
+          {/* <ProjectsShowcase></ProjectsShowcase> */}
+
+          <WorkProcess></WorkProcess>
         </main>
         <Footer />
       </>

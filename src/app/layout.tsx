@@ -1,20 +1,20 @@
 // src/app/layout.tsx
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
+import { Unbounded } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/Themecontext";
 
-// Charger Poppins via next/font/google
-const poppins = Poppins({
+// Charger Unbounded via next/font/google
+const unbounded = Unbounded({
   subsets: ["latin"],
   weight: ["400", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-unbounded", // Changement de nom pour plus de clarté
 });
 
 export const metadata: Metadata = {
-  title: "SPRINTER - Creative Design Agency",
+  title: "SPRINTER - Agence de design créatif",
   description:
-    "Creative design agency specializing in innovative visual solutions",
+    "Agence de design créatif spécialisée dans les solutions visuelles innovantes",
 };
 
 export default function RootLayout({
@@ -23,18 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <head>
-        {/* Charger Font Awesome via CDN */}
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-          crossOrigin="anonymous"
-          referrerPolicy="no-referrer"
-        />
-      </head>
-      <body className={`${poppins.variable} antialiased font-poppins`}>
+    <html lang="fr">
+      <body className={`${unbounded.variable} antialiased`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

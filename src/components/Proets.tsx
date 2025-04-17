@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import "keen-slider/keen-slider.min.css"
-import { useKeenSlider } from "keen-slider/react"
-import Image from "next/image"
-import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react"
-import { useState } from "react"
+import "keen-slider/keen-slider.min.css";
+import { useKeenSlider } from "keen-slider/react";
+import Image from "next/image";
+import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
+import { useState } from "react";
 
 const projects = [
   {
@@ -27,7 +27,7 @@ const projects = [
     category: "Mobile",
     image: "/images/imagesteam.jpg",
   },
-]
+];
 
 export default function ProjectsCarousel() {
   const [sliderRef, slider] = useKeenSlider({
@@ -45,13 +45,15 @@ export default function ProjectsCarousel() {
         slides: { perView: 3, spacing: 24 },
       },
     },
-  })
+  });
 
   return (
     <section className="py-16 px-6 md:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="text-4xl md:text-5xl font-bold">Let's See Our Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">
+            Redardez nos derniers Projets
+          </h2>
           <div className="space-x-3 hidden md:block">
             <button
               onClick={() => slider.current?.prev()}
@@ -70,7 +72,10 @@ export default function ProjectsCarousel() {
 
         <div ref={sliderRef} className="keen-slider">
           {projects.map((project, idx) => (
-            <div key={idx} className="keen-slider__slide rounded-2xl overflow-hidden shadow-md group cursor-pointer w-[300px]">
+            <div
+              key={idx}
+              className="keen-slider__slide rounded-2xl overflow-hidden shadow-md group cursor-pointer w-[300px]"
+            >
               <div className="relative h-[300px] w-full overflow-hidden">
                 <Image
                   src={project.image}
@@ -93,5 +98,5 @@ export default function ProjectsCarousel() {
         </div>
       </div>
     </section>
-  )
+  );
 }

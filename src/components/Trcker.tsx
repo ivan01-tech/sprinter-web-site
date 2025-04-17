@@ -3,14 +3,14 @@ import React from "react";
 
 const Ticker: React.FC = () => {
   return (
-    <section className="bg-yellow-400 py-8 overflow-hidden h-auto flex justify-center items-center align-middle">
+    <section className="bg-yellow-400 w-full overflow-hidden py-8  h-auto flex justify-center items-center align-middle">
       <div className="ticker-wrapper">
         <div className="ticker h-full flex justify-center align-middle">
           <span className="text-black text-4xl font-semibold">
-            Design  #  Web Design    # UI/UX   #  Development   # SaaS   Design #
+            # Web Design # UI/UX Design # Development Web # Development Web #
           </span>
           <span className="text-black text-6xl font-semibold">
-            Design  # Web Design    # UI/UX   # Development  # SaaS Design #
+            # Web Design # UI/UX Design # Development Web # Development Web #
           </span>
         </div>
       </div>

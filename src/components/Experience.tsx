@@ -10,7 +10,7 @@ export default function ExperienceSection() {
   return (
     <section className="bg-yellow-400 w-full py-12 px-6 md:px-16">
       {/* Image + bouton lecture */}
-      <div className="max-w-6xl mx-auto rounded-xl overflow-hidden shadow-lg">
+      <div className="max-w-6xl px-auto rounded-xl overflow-hidden shadow-lg">
         <div className="relative h-[400px] w-full">
           <Image
             src="/images/imagesteam.jpg"
@@ -35,7 +35,7 @@ export default function ExperienceSection() {
       {/* Statistiques animées */}
       <div
         ref={ref}
-        className="max-w-6xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-black"
+        className="max-w-6xl mp-auto mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center text-black"
       >
         <CounterBox
           value={28}

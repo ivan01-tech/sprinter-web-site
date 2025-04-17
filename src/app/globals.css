@@ -1,18 +1,26 @@
-@import 'keen-slider/keen-slider.min.css';
-
+@import "keen-slider/keen-slider.min.css";
+@import "aos/dist/aos.css";
 
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
+*,
+*::after,
+*::before {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
 body {
-  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
+  font-family: var(--font-unbounded), Arial, Helvetica, sans-serif;
+  margin: auto;
 }
 
 /* src/app/globals.css */
 :root {
-  --font-poppins: "Poppins", sans-serif;
+  --font-unbounded: "unbounded", sans-serif;
   --radius: 0.625rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.13 0.028 261.692);
@@ -49,7 +57,7 @@ body {
 
 html,
 body {
-  font-family: var(--font-poppins);
+  font-family: var(--font-unbounded);
 }
 
 :root {

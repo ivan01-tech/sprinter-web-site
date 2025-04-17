@@ -121,7 +121,7 @@ export const Footer = () => {
 
       {/* Bottom Links */}
       <div className="mt-10 border-t pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
-        <p>© 2025 Theme Ocean</p>
+        <p>© 2025 SPRINTER</p>
         <div className="flex gap-4 mt-2 md:mt-0">
           <a href="#" className="hover:text-yellow-500 transition">
             Termes et conditions
