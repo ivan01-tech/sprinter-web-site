@@ -5,7 +5,7 @@ import { FaUsers } from "react-icons/fa"; // Icône pour les stats
 
 const Hero: React.FC = () => {
   return (
-    <section className="bg-black text-white min-h-screen flex items-center pt-20">
+    <section className="bg-white text-black min-h-screen flex items-center pt-20">
       <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between">
         {/* Titre principal */}
         <div className="md:w-1/2 mb-10 md:mb-0">

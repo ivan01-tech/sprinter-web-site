@@ -1,16 +1,39 @@
-import { X, Phone, Mail, MapPin, Facebook, Twitter, Linkedin, Instagram } from 'lucide-react';
+import {
+  X,
+  Phone,
+  Mail,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
+import { Dispatch, SetStateAction } from "react";
 
-export default function ContactSidebar() {
+interface ContactSidebarProps {
+  setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+  // isSidebarOpen: boolean;
+}
+
+export const ContactSidebar: React.FC<ContactSidebarProps> = ({
+  setIsSidebarOpen,
+}) => {
   return (
     <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-lg p-8 overflow-y-auto">
       {/* Bouton de fermeture */}
-      <button className="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+      <button
+        onClick={() => setIsSidebarOpen((prev) => !prev)}
+        className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 cursor-pointer"
+      >
         <X size={24} />
       </button>
 
       {/* En-tête */}
       <h2 className="text-3xl font-bold mb-4">Contactez-nous !</h2>
-      <p className="text-gray-600 mb-8">Prêt à franchir le premier pas vers de nouvelles opportunités et à réaliser vos objectifs.</p>
+      <p className="text-gray-600 mb-8">
+        Prêt à franchir le premier pas vers de nouvelles opportunités et à
+        réaliser vos objectifs.
+      </p>
 
       {/* Informations de contact */}
       <div className="space-y-6">
@@ -30,7 +53,7 @@ export default function ContactSidebar() {
           </div>
           <div>
             <p className="text-gray-500">Adresse e-mail</p>
-            <p className="font-semibold text-lg">Vorix@gmail.com</p>
+            <p className="font-semibold text-lg">SPRINTER@gmail.com</p>
           </div>
         </div>
 
@@ -49,16 +72,28 @@ export default function ContactSidebar() {
       <div className="mt-8">
         <p className="text-lg font-semibold mb-4">Réseaux sociaux</p>
         <div className="flex space-x-4">
-          <a href="#" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600">
+          <a
+            href="#"
+            className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600"
+          >
             <Facebook size={20} />
           </a>
-          <a href="#" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600">
+          <a
+            href="#"
+            className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600"
+          >
             <Twitter size={20} />
           </a>
-          <a href="#" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600">
+          <a
+            href="#"
+            className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600"
+          >
             <Linkedin size={20} />
           </a>
-          <a href="#" className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600">
+          <a
+            href="#"
+            className="p-3 bg-gray-800 text-white rounded-full hover:bg-gray-600"
+          >
             <Instagram size={20} />
           </a>
         </div>
@@ -72,4 +107,6 @@ export default function ContactSidebar() {
       </div>
     </div>
   );
-}
+};
+
+export default ContactSidebar;

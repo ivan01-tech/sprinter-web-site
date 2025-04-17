@@ -1,12 +1,20 @@
 // src/components/ClientSolutions.tsx
-import React from "react";
 import { FaChartLine } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import * as React from "react";
 
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 // Importer les styles de Swiper
 import "swiper/css";
 import "swiper/css/pagination";
+import { Card, CardContent } from "./ui/card";
 
 const solutions = [
   {
@@ -18,6 +26,21 @@ const solutions = [
     title: "Web Development",
     description:
       "Building responsive and scalable websites to enhance your online presence.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Creating intuitive and visually appealing designs for better user engagement.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Creating intuitive and visually appealing designs for better user engagement.",
+  },
+  {
+    title: "UI/UX Design",
+    description:
+      "Creating intuitive and visually appealing designs for better user engagement.",
   },
   {
     title: "UI/UX Design",
@@ -73,7 +96,12 @@ const ClientSolutions: React.FC = () => {
           className="pb-12"
         >
           {solutions.map((solution, index) => (
-            <SwiperSlide key={index}>
+            <SwiperSlide
+              key={index}
+              style={{
+                marginBottom: 4,
+              }}
+            >
               <div className="bg-white rounded-lg shadow-lg p-8 text-center">
                 <div className="flex justify-center mb-4">
                   <div className="bg-yellow-400 rounded-full p-3">
@@ -87,6 +115,37 @@ const ClientSolutions: React.FC = () => {
           ))}
         </Swiper>
       </div>
+
+      {/* <Carousel className="w-full my-8">
+        <CarouselContent>
+          {solutions.map((solution, index) => (
+            <CarouselItem
+              key={index}
+              className="w-[80%] sm:basis-1/2 lg:basis-1/4" // 1 par ligne en mobile, 2 sur tablette, 4 sur desktop
+            >
+              <div className="p-1">
+                <Card>
+                  <CardContent className="flex items-center justify-center p-6">
+                    <div className="bg-white p-8 text-center">
+                      <div className="flex justify-center mb-4">
+                        <div className="bg-yellow-400 p-3">
+                          <FaChartLine className="text-white text-2xl" />
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-semibold mb-4">
+                        {solution.title}
+                      </h3>
+                      <p className="text-gray-600">{solution.description}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious />
+        <CarouselNext />
+      </Carousel> */}
 
       {/* Style personnalisé pour les dots de pagination */}
       <style jsx global>{`

@@ -1,3 +1,4 @@
+// src/components/Footer.tsx
 import React from "react";
 import {
   FaFacebookF,
@@ -8,46 +9,46 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-black py-10 px-6 mt-12 border-t">
+    <footer className="bg-gray-100 dark:bg-gray-800 text-black dark:text-white py-10 px-6 mt-12 border-t border-gray-200 dark:border-gray-700">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
         {/* Branding */}
         <div className="flex-1">
-          <h2 className="text-2xl font-bold">Vorix</h2>
-          <p className="mt-2 text-gray-600">
-            Creative design agency specializes in innovative visual solutions
+          <h2 className="text-2xl font-bold">SPRINTER</h2>
+          <p className="mt-2 text-gray-600 dark:text-gray-400">
+            Agence de design créatif spécialisée dans les solutions visuelles innovantes
           </p>
           <div className="flex gap-3 mt-4">
             <a
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white shadow hover:bg-gray-100 transition"
+              className="p-2 rounded-full bg-white dark:bg-gray-700 shadow hover:bg-gray-100 dark:hover:bg-gray-600 transition"
             >
-              <FaFacebookF className="text-blue-600" />
+              <FaFacebookF className="text-blue-600 dark:text-blue-400" />
             </a>
             <a
               href="https://twitter.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white shadow hover:bg-gray-100 transition"
+              className="p-2 rounded-full bg-white dark:bg-gray-700 shadow hover:bg-gray-100 dark:hover:bg-gray-600 transition"
             >
-              <FaTwitter className="text-blue-400" />
+              <FaTwitter className="text-blue-400 dark:text-blue-300" />
             </a>
             <a
               href="https://linkedin.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white shadow hover:bg-gray-100 transition"
+              className="p-2 rounded-full bg-white dark:bg-gray-700 shadow hover:bg-gray-100 dark:hover:bg-gray-600 transition"
             >
-              <FaLinkedinIn className="text-blue-700" />
+              <FaLinkedinIn className="text-blue-700 dark:text-blue-500" />
             </a>
             <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-full bg-white shadow hover:bg-gray-100 transition"
+              className="p-2 rounded-full bg-white dark:bg-gray-700 shadow hover:bg-gray-100 dark:hover:bg-gray-600 transition"
             >
-              <FaInstagram className="text-pink-500" />
+              <FaInstagram className="text-pink-500 dark:text-pink-400" />
             </a>
           </div>
         </div>
@@ -55,78 +56,78 @@ export const Footer = () => {
         {/* Services */}
         <div className="flex-1">
           <h3 className="text-lg font-semibold mb-2">Services</h3>
-          <ul className="text-gray-600 space-y-1">
+          <ul className="text-gray-600 dark:text-gray-400 space-y-1">
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              UI/UX Design
+              Conception UI/UX
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              Mobile Apps Design
+              Conception d'applications mobiles
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              Web Development
+              Développement web
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              SaaS Design
+              Conception SaaS
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              Webflow Design
+              Conception Webflow
             </li>
           </ul>
         </div>
 
         {/* Resources */}
         <div className="flex-1">
-          <h3 className="text-lg font-semibold mb-2">Resources</h3>
-          <ul className="text-gray-600 space-y-1">
+          <h3 className="text-lg font-semibold mb-2">Ressources</h3>
+          <ul className="text-gray-600 dark:text-gray-400 space-y-1">
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              About Us
+              À propos de nous
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
               Portfolio
             </li>
             <li className="text-yellow-500 hover:text-yellow-600 transition-colors cursor-pointer">
-              Expert Team
+              Équipe d'experts
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              Pricing Plan
+              Plan tarifaire
             </li>
             <li className="hover:text-yellow-500 transition-colors cursor-pointer">
-              Blog & News
+              Blog & Actualités
             </li>
           </ul>
         </div>
 
         {/* Subscribe */}
         <div className="flex-1">
-          <h3 className="text-lg font-semibold mb-2">Subscribe</h3>
+          <h3 className="text-lg font-semibold mb-2">S'abonner</h3>
           <form className="space-y-3">
             <input
               type="email"
-              placeholder="Email address"
+              placeholder="Adresse e-mail"
               className="w-full border rounded-full px-4 py-2"
             />
             <div className="flex items-center gap-2">
               <input type="checkbox" id="agree" />
-              <label htmlFor="agree" className="text-sm text-gray-600">
-                I agree with the terms and conditions.
+              <label htmlFor="agree" className="text-sm text-gray-600 dark:text-gray-400">
+                J'accepte les termes et conditions.
               </label>
             </div>
             <button className="bg-yellow-400 rounded-full px-4 py-2 hover:bg-yellow-500 transition">
-              Subscribe
+              S'abonner
             </button>
           </form>
         </div>
       </div>
 
       {/* Bottom Links */}
-      <div className="mt-10 border-t pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+      <div className="mt-10 border-t pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
         <p>© 2025 Theme Ocean</p>
         <div className="flex gap-4 mt-2 md:mt-0">
           <a href="#" className="hover:text-yellow-500 transition">
-            Terms & Conditions
+            Termes et conditions
           </a>
           <a href="#" className="hover:text-yellow-500 transition">
-            Privacy Policy
+            Politique de confidentialité
           </a>
         </div>
       </div>

@@ -3,14 +3,14 @@ import React from "react";
 
 const Ticker: React.FC = () => {
   return (
-    <section className="bg-yellow-400 py-4 overflow-hidden">
+    <section className="bg-yellow-400 py-8 overflow-hidden h-auto flex justify-center items-center align-middle">
       <div className="ticker-wrapper">
-        <div className="ticker">
-          <span className="text-black text-lg font-semibold">
-            Design # Web Design # Webflow # UI/UX # Development # SaaS Design #
+        <div className="ticker h-full flex justify-center align-middle">
+          <span className="text-black text-4xl font-semibold">
+            Design  #  Web Design    # UI/UX   #  Development   # SaaS   Design #
           </span>
-          <span className="text-black text-lg font-semibold">
-            Design # Web Design # Webflow # UI/UX # Development # SaaS Design #
+          <span className="text-black text-6xl font-semibold">
+            Design  # Web Design    # UI/UX   # Development  # SaaS Design #
           </span>
         </div>
       </div>
@@ -22,7 +22,7 @@ const Ticker: React.FC = () => {
         .ticker {
           display: flex;
           white-space: nowrap;
-          animation: ticker 15s linear infinite;
+          animation: ticker 55s linear infinite;
         }
         .ticker span {
           margin-right: 2rem;
