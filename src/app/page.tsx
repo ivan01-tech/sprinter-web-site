@@ -12,6 +12,8 @@ import Ticker from "@/components/Trcker";
 import ClientSolutions from "@/components/ClientsSolution";
 import Projects from "@/components/Projets";
 import DigitalSolutionsSection from "@/components/DigitalSolutions";
+import ExperienceSection from "@/components/Experience";
+import ProjectsShowcase from "@/components/Proets";
 
 export default function Home() {
   return (
@@ -20,7 +22,7 @@ export default function Home() {
         <header className="sticky top-0 z-50 bg-white shadow-md">
           <Navbar />
         </header>
-        <main className="relative min-h-screen bg-[#f9f9f9] flex flex-col items-center justify-center px-4 sm:px-8">
+        <main className="relative min-h-screen bg-[#f9f9f9] flex flex-col items-center justify-center">
           <Hero />
           <Pricing />
           <Ticker />
@@ -29,6 +31,10 @@ export default function Home() {
           <ClientSolutions />
 
           <DigitalSolutionsSection></DigitalSolutionsSection>
+
+          <ExperienceSection></ExperienceSection>
+
+          <ProjectsShowcase></ProjectsShowcase>
         </main>
         <Footer />
       </>

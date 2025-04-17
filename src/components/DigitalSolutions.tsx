@@ -13,13 +13,16 @@ export default function DigitalSolutionsSection() {
             objectFit="cover"
             className="rounded-3xl"
           />
-          <div className="absolute -bottom-10 -right-10 bg-yellow-400 rounded-full p-8 w-40 h-40 flex flex-col items-center justify-center text-center shadow-xl">
-            <span className="text-3xl font-bold">20+</span>
-            <span className="text-sm">
-              Années
-              <br />
-              d'expérience
-            </span>
+
+          <div className="p-2 bg-white absolute bottom-40 -right-10 rounded-full    flex flex-col items-center justify-center text-center shadow-xl ">
+            <div className=" bg-yellow-400 p-8 m-2 rounded-full flex flex-col items-center justify-center text-center ">
+              <span className="text-3xl font-bold">20+</span>
+              <span className="text-sm">
+                Années
+                <br />
+                d'expérience
+              </span>
+            </div>
           </div>
         </div>
 
