@@ -3,6 +3,8 @@ import type { Metadata } from "next";
 import { Unbounded } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/contexts/Themecontext";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 // Charger Unbounded via next/font/google
 const unbounded = Unbounded({
@@ -25,7 +27,15 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${unbounded.variable} antialiased`}>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <header className="sticky top-0 z-50 bg-white shadow-md">
+            <Navbar />
+          </header>
+
+          {children}
+
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

@@ -48,7 +48,7 @@ export default function ProjectsCarousel() {
   });
 
   return (
-    <section className="py-16 px-6 md:px-16 bg-white">
+    <section className="py-16 px-6 md:px-16 bg-white w-full overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="flex justify-between items-center mb-8">
           <h2 className="text-4xl md:text-5xl font-bold">

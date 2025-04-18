@@ -66,7 +66,7 @@ const solutions = [
 
 const ClientSolutions: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-gray-50 py-16 overflow-hidden w-full">
       <div className="max-w-7xl mx-auto px-6">
         {/* Titre */}
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">

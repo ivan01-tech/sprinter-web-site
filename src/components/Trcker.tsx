@@ -3,37 +3,30 @@ import React from "react";
 
 const Ticker: React.FC = () => {
   return (
-    <section className="bg-yellow-400 w-full overflow-hidden py-8  h-auto flex justify-center items-center align-middle">
-      <div className="ticker-wrapper">
-        <div className="ticker h-full flex justify-center align-middle">
-          <span className="text-black text-4xl font-semibold">
+    <section className="bg-yellow-400 w-full overflow-hidden py-6 flex justify-center items-center">
+      <div className="relative w-full">
+        <div className="flex animate-scroll whitespace-nowrap text-nowrap">
+          <span className="text-black text-xl sm:text-2xl md:text-4xl font-semibold mx-4">
             # Web Design # UI/UX Design # Development Web # Development Web #
           </span>
-          <span className="text-black text-6xl font-semibold">
+          <span className="text-black text-xl sm:text-2xl md:text-4xl font-semibold mx-4">
             # Web Design # UI/UX Design # Development Web # Development Web #
           </span>
         </div>
       </div>
+
       <style jsx>{`
-        .ticker-wrapper {
-          width: 100%;
-          overflow: hidden;
-        }
-        .ticker {
-          display: flex;
-          white-space: nowrap;
-          animation: ticker 55s linear infinite;
-        }
-        .ticker span {
-          margin-right: 2rem;
-        }
-        @keyframes ticker {
+        @keyframes scroll {
           0% {
             transform: translateX(0);
           }
           100% {
             transform: translateX(-50%);
           }
+        }
+
+        .animate-scroll {
+          animation: scroll 45s linear infinite;
         }
       `}</style>
     </section>

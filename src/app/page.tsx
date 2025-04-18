@@ -15,31 +15,32 @@ import DigitalSolutionsSection from "@/components/DigitalSolutions";
 import ExperienceSection from "@/components/Experience";
 import ProjectsShowcase from "@/components/Proets";
 import WorkProcess from "@/components/WorkProcess";
+import TeamSection from "@/components/TeamSections";
+import Testimonials from "@/components/Texttinomials";
 
 export default function Home() {
   return (
     <>
       <>
-        <header className="sticky top-0 z-50 bg-white shadow-md">
-          <Navbar />
-        </header>
         <main className="relative min-h-screen bg-[#f9f9f9] flex flex-col items-center justify-center">
           <Hero />
           <Pricing />
           <Ticker />
-          {/* <Projects /> */}
+          <Projects />
 
-          {/* <ClientSolutions /> */}
+          <ClientSolutions />
 
           <DigitalSolutionsSection></DigitalSolutionsSection>
 
           <ExperienceSection></ExperienceSection>
 
-          {/* <ProjectsShowcase></ProjectsShowcase> */}
+          <ProjectsShowcase></ProjectsShowcase>
 
           <WorkProcess></WorkProcess>
+          <TeamSection></TeamSection>
+
+          <Testimonials></Testimonials>
         </main>
-        <Footer />
       </>
     </>
   );

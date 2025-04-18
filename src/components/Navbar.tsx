@@ -35,8 +35,8 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           <Link href="/" className="hover:text-gray-400">
             HOME
           </Link>
-          <Link href="/pages" className="hover:text-gray-400">
-            PAGES
+          <Link href="/about" className="hover:text-gray-400">
+            A PROPOS
           </Link>
           <Link href="/portfolio" className="hover:text-gray-400">
             PORTFOLIO
@@ -122,7 +122,7 @@ const Navbar: React.FC<NavbarProps> = ({}) => {
           HOME
         </Link>
         <Link
-          href="/pages"
+          href="/about"
           className="text-2xl hover:text-gray-400"
           onClick={toggleMenu}
         >
