@@ -40,24 +40,24 @@ export default function ExperienceSection() {
   );
 }
 
-function CounterBox({
-  value,
-  label,
-  description,
-}: {
-  value: number;
-  label: string;
-  description: string;
-}) {
-  const { ref, inView } = useInView({ triggerOnce: true });
+// function CounterBox({
+//   value,
+//   label,
+//   description,
+// }: {
+//   value: number;
+//   label: string;
+//   description: string;
+// }) {
+//   const { ref, inView } = useInView({ triggerOnce: true });
 
-  return (
-    <div ref={ref}>
-      <h2 className="text-4xl font-bold">
-        {inView ? <CountUp end={value} duration={2} /> : 0}+
-      </h2>
-      <h3 className="font-semibold mt-2">{label}</h3>
-      <p className="text-sm mt-1">{description}</p>
-    </div>
-  );
-}
+//   return (
+//     <div ref={ref}>
+//       <h2 className="text-4xl font-bold">
+//         {inView ? <CountUp end={value} duration={2} /> : 0}+
+//       </h2>
+//       <h3 className="font-semibold mt-2">{label}</h3>
+//       <p className="text-sm mt-1">{description}</p>
+//     </div>
+//   );
+// }

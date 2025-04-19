@@ -1,6 +1,7 @@
 // src/components/Testimonials.tsx
 "use client";
 
+import Image from "next/image";
 import React, { useState } from "react";
 import { FaStar } from "react-icons/fa"; // Pour les étoiles de notation
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Pour les flèches de navigation
@@ -82,12 +83,12 @@ const Testimonials: React.FC = () => {
 
           {/* Citation */}
           <blockquote className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-            "{review}"
+            {review}
           </blockquote>
 
           {/* Auteur */}
           <div className="flex items-center gap-4">
-            <img
+            <Image
               src={avatar}
               alt={name}
               className="w-12 h-12 rounded-full object-cover"

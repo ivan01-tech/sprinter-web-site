@@ -7,12 +7,12 @@ import { FaBars } from "react-icons/fa";
 import ContactSidebar from "./Siderbar";
 
 // Définir une interface pour les props
-interface NavbarProps {
-  // setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
-  // isSidebarOpen: boolean;
-}
+// interface NavbarProps {
+//   // setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+//   // isSidebarOpen: boolean;
+// }
 
-const Navbar: React.FC<NavbarProps> = ({}) => {
+const Navbar: React.FC = ({}) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
