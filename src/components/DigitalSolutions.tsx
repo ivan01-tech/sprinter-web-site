@@ -20,7 +20,7 @@ export default function DigitalSolutionsSection() {
               <span className="text-sm">
                 Années
                 <br />
-                d'expérience
+                d&apos;expérience
               </span>
             </div>
           </div>
@@ -34,7 +34,7 @@ export default function DigitalSolutionsSection() {
           <p className="text-gray-600 mb-6">
             Nous concevons des solutions numériques sur mesure, conçues pour
             simplifier vos processus et propulser votre activité. Grâce à plus
-            de 20 ans d'expérience, nous apportons un savoir-faire fiable,
+            de 20 ans d&apos;expérience, nous apportons un savoir-faire fiable,
             efficace et innovant à chaque projet.
           </p>
 
@@ -49,8 +49,8 @@ export default function DigitalSolutionsSection() {
               </summary>
               <div className="bg-white p-4 text-gray-700">
                 Offrir des solutions digitales accessibles, fiables et centrées
-                sur l'humain. Nous croyons que la technologie doit servir la
-                simplicité, l'efficacité et la croissance durable.
+                sur l&apos;humain. Nous croyons que la technologie doit servir la
+                simplicité, l&apos;efficacité et la croissance durable.
               </div>
             </details>
             <details className="border border-gray-300 rounded-xl overflow-hidden">
@@ -58,7 +58,7 @@ export default function DigitalSolutionsSection() {
                 Notre vision
               </summary>
               <div className="bg-white p-4 text-gray-700">
-                Être un leader reconnu en matière d'innovation digitale, en
+                Être un leader reconnu en matière d&apos;innovation digitale, en
                 créant des expériences utilisateur intuitives et en contribuant
                 à la transformation digitale des entreprises à travers le monde.
               </div>

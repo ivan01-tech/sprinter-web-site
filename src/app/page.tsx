@@ -1,12 +1,6 @@
 "use client";
 
 import Hero from "@/components/Hero";
-import Hero2 from "@/components/Hero2";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import ContactSidebar from "@/components/Siderbar";
-import { useState } from "react";
-import { X } from "lucide-react";
 import Pricing from "@/components/Pricing";
 import Ticker from "@/components/Trcker";
 import ClientSolutions from "@/components/ClientsSolution";

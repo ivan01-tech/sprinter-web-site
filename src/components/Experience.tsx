@@ -6,7 +6,7 @@ import { useInView } from "react-intersection-observer";
 import Stats from "./ClientSatify";
 
 export default function ExperienceSection() {
-  const { ref, inView } = useInView({ triggerOnce: true });
+  // const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
     <div className="w-full flex justify-center items-center">

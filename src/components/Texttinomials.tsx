@@ -21,18 +21,18 @@ const testimonials: Testimonial[] = [
     role: "Designer UX",
     rating: 4.9,
     review:
-      "Il a rapidement livré un design exceptionnel selon les spécifications. La nouvelle page de destination aura un look simple et rafraîchissant tout en maintenant un temps de chargement léger sur les images, tout en conservant un aspect professionnel. Enfin, il semble également très raisonnable d'implémenter un design réactif, donc je suis très satisfait de cela.",
+      "Il a rapidement livré un design exceptionnel selon les spécifications. La nouvelle page de destination aura un look simple et rafraîchissant tout en maintenant un temps de chargement léger sur les images, tout en conservant un aspect professionnel. Enfin, il semble également très raisonnable d&apos;implémenter un design réactif, donc je suis très satisfait de cela.",
     source: "Clutch",
     reviewsCount: 54,
     avatar: "/images/image_personne.jpg"
   },
-  // Ajoute d'autres témoignages si nécessaire
+  // Ajoute d&apos;autres témoignages si nécessaire
   {
     name: "Marie Dubois",
     role: "Développeuse Front-End",
     rating: 4.8,
     review:
-      "Le design livré était exactement ce que nous cherchions. Il est moderne, intuitif et parfaitement adapté à nos besoins. L'équipe a été très réactive et a pris en compte toutes nos suggestions. Je recommande vivement leurs services !",
+      "Le design livré était exactement ce que nous cherchions. Il est moderne, intuitif et parfaitement adapté à nos besoins. L&apos;équipe a été très réactive et a pris en compte toutes nos suggestions. Je recommande vivement leurs services !",
     source: "Upwork",
     reviewsCount: 32,
     avatar: "/images/image_personne.jpg"
@@ -63,7 +63,7 @@ const Testimonials: React.FC = () => {
         {/* Titre */}
         <div className="md:w-1/2">
           <h2 className="text-5xl md:text-6xl font-bold text-black dark:text-white leading-tight">
-            Ce que les clients <br /> disent de l'outil
+            Ce que les clients <br /> disent de l&apos;outil
           </h2>
         </div>
 

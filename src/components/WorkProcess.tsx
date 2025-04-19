@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { Lightbulb, Pencil, Workflow } from "lucide-react";
 import AOS from "aos";
-import ProgressSteps from "./ProgressStep";
 
 const steps = [
   {

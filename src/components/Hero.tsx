@@ -43,9 +43,9 @@ const Hero: React.FC = () => {
 
           {/* Description */}
           <p className="text-gray-400 dark:text-gray-500 mb-8 max-w-md">
-            Nous croyons que la meilleure mesure du succès est lorsqu'un client
+            Nous croyons que la meilleure mesure du succès est lorsqu&apos;un client
             collabore avec nous sur le long terme. Plus de la moitié de nos
-            clients restent avec nous pour plus d'un projet.
+            clients restent avec nous pour plus d&apos;un projet.
           </p>
 
           {/* Bouton */}

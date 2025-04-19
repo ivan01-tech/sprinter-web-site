@@ -29,7 +29,7 @@ const QualityDesign: React.FC = () => {
             Passionnés par un Design de Qualité
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-            Si vous demandez à nos clients ce que c'est de travailler avec nous, ils parleront de notre engagement envers leur succès. Pour nous, des relations authentiques sont la clé du succès.
+            Si vous demandez à nos clients ce que c&apos;est de travailler avec nous, ils parleront de notre engagement envers leur succès. Pour nous, des relations authentiques sont la clé du succès.
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center">
@@ -64,7 +64,7 @@ const QualityDesign: React.FC = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              Maîtrise de l'art de la conversion
+              Maîtrise de l&apos;art de la conversion
             </li>
             <li className="flex items-center">
               <svg

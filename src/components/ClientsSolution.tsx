@@ -4,17 +4,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import * as React from "react";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
 // Importer les styles de Swiper
 import "swiper/css";
 import "swiper/css/pagination";
-import { Card, CardContent } from "./ui/card";
 
 const solutions = [
   {

@@ -1,12 +1,10 @@
 "use client";
-import React, { Dispatch, SetStateAction, useState } from "react";
+import React, { useState } from "react";
 import Link from "next/link";
-import { FiSearch, FiMenu, FiX } from "react-icons/fi"; // Icônes de react-icons
+import { FiMenu, FiX } from "react-icons/fi"; // Icônes de react-icons
 import ThemeToggle from "./design/ThemeToggle";
 import { FaBars } from "react-icons/fa";
 import ContactSidebar from "./Siderbar";
-import { X } from "lucide-react";
-import DigitalSolutionsSection from "./DigitalSolutions";
 
 // Définir une interface pour les props
 interface NavbarProps {
