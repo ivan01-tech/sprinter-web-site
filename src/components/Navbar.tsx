@@ -5,14 +5,15 @@ import { FiMenu, FiX } from "react-icons/fi"; // Icônes de react-icons
 import ThemeToggle from "./design/ThemeToggle";
 import { FaBars } from "react-icons/fa";
 import ContactSidebar from "./Siderbar";
+import Image from "next/image";
 
-// Définir une interface pour les props
+// Définir une interface pour les props (commentée car non utilisée actuellement)
 // interface NavbarProps {
-//   // setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
-//   // isSidebarOpen: boolean;
+//   setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
+//   isSidebarOpen: boolean;
 // }
 
-const Navbar: React.FC = ({}) => {
+const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -25,16 +26,22 @@ const Navbar: React.FC = ({}) => {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold">
-          SPRINTER
+          <Image
+            src="/images/logos/logo-light.png"
+            alt="Logo Sprinter"
+            width={120}
+            height={120}
+            className="rounded-full object-cover"
+          />
         </Link>
 
         {/* Liens de navigation (visible sur desktop) */}
         <div className="hidden md:flex space-x-6">
           <Link href="/" className="hover:text-gray-400">
-            HOME
+            ACCUEIL
           </Link>
           <Link href="/about" className="hover:text-gray-400">
-            A PROPOS
+            À PROPOS
           </Link>
           <Link href="/portfolio" className="hover:text-gray-400">
             PORTFOLIO
@@ -46,23 +53,16 @@ const Navbar: React.FC = ({}) => {
 
         {/* Icônes (recherche + menu hamburger) */}
         <div className="flex items-center space-x-4">
-          {/* <button
-            className="fixed bottom-6 right-6 z-40 bg-yellow-400 text-black px-5 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-500 transition duration-300"
-          >
-            Contactez-nous
-          </button> */}
-
           {/* Bouton de bascule de thème */}
           <ThemeToggle />
 
           <button
             onClick={() => setIsSidebarOpen(true)}
             className="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-black shadow-md hover:bg-yellow-500 transition-all duration-300 ease-in-out"
-            aria-label="Toggle menu"
+            aria-label="Ouvrir le menu de contact"
           >
             <FaBars className="text-lg" />
           </button>
-          {/*  */}
           <button className="md:hidden" onClick={toggleMenu}>
             {isOpen ? (
               <FiX className="text-2xl" />
@@ -74,7 +74,6 @@ const Navbar: React.FC = ({}) => {
       </div>
 
       {/* Menu mobile (visible quand isOpen est true) */}
-
       {isSidebarOpen && (
         <div className="fixed inset-0 z-50 flex">
           {/* Overlay noir semi-transparent */}
@@ -84,19 +83,9 @@ const Navbar: React.FC = ({}) => {
           />
 
           {/* Sidebar */}
-          <div className="w-[380px] max-w-full bg-black  h-full shadow-2xl relative">
-            {/* Bouton fermeture */}
-            {/* <button
-              onClick={() => setIsSidebarOpen(false)}
-              className="absolute top-5 right-5 text-gray-400 hover:text-black"
-            >
-             <X size={24} /> 
-              ggggggggggggggggggggggg
-            </button> */}
-
+          <div className="w-[380px] max-w-full bg-black h-full shadow-2xl relative">
             {/* Composant Contact */}
             <ContactSidebar setIsSidebarOpen={setIsSidebarOpen} />
-
           </div>
         </div>
       )}
@@ -117,14 +106,14 @@ const Navbar: React.FC = ({}) => {
           className="text-2xl hover:text-gray-400"
           onClick={toggleMenu}
         >
-          HOME
+          ACCUEIL
         </Link>
         <Link
           href="/about"
           className="text-2xl hover:text-gray-400"
           onClick={toggleMenu}
         >
-          PAGES
+          À PROPOS
         </Link>
         <Link
           href="/portfolio"

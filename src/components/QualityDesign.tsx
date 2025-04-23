@@ -1,4 +1,3 @@
-// src/components/QualityDesign.tsx
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -7,7 +6,6 @@ const QualityDesign: React.FC = () => {
   return (
     <section className="bg-white dark:bg-gray-900 py-16">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
-        {/* Image */}
         <div className="md:w-1/2">
           <div className="relative rounded-2xl overflow-hidden shadow-lg">
             <Image
@@ -17,19 +15,16 @@ const QualityDesign: React.FC = () => {
               height={400}
               className="object-cover w-full h-full"
             />
-            {/* <div className="absolute bottom-0 left-0 bg-gray-200 dark:bg-gray-700 text-black dark:text-white text-center py-2 w-full">
-              <p className="font-semibold">2560+ Clients satisfaits dans le monde</p>
-            </div> */}
           </div>
         </div>
-
-        {/* Contenu */}
         <div className="md:w-1/2">
           <h2 className="text-4xl md:text-5xl font-bold text-black dark:text-white font-unbounded mb-6">
-            Passionnés par un Design de Qualité
+            Architectes de Votre Avenir Digital
           </h2>
           <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-            Si vous demandez à nos clients ce que c&apos;est de travailler avec nous, ils parleront de notre engagement envers leur succès. Pour nous, des relations authentiques sont la clé du succès.
+            Sprinter fusionne créativité audacieuse et précision technique pour
+            créer des sites web qui captivent, des applications qui engagent et
+            des campagnes qui convertissent.
           </p>
           <ul className="space-y-4 mb-6">
             <li className="flex items-center">
@@ -47,7 +42,8 @@ const QualityDesign: React.FC = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              Simplicité : Les meilleures idées sont les plus simples
+              Innovation visionnaire : Repousser les limites du design et de la
+              technologie
             </li>
             <li className="flex items-center">
               <svg
@@ -64,7 +60,8 @@ const QualityDesign: React.FC = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              Maîtrise de l&apos;art de la conversion
+              Excellence opérationnelle : Livrer des projets impeccables, à
+              temps
             </li>
             <li className="flex items-center">
               <svg
@@ -81,14 +78,14 @@ const QualityDesign: React.FC = () => {
                   d="M5 13l4 4L19 7"
                 />
               </svg>
-              Maintien de normes publicitaires élevées
+              Impact digital : Stratégies marketing qui dominent le marché
             </li>
           </ul>
           <Link
-            href="/about"
+            href="/contact"
             className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors"
           >
-            En savoir plus sur nous
+            Collaborons dès maintenant
           </Link>
         </div>
       </div>

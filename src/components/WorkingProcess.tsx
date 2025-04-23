@@ -1,34 +1,34 @@
-"use client"
+"use client";
 
-import React from "react"
-import Link from "next/link"
+import React from "react";
+import Link from "next/link";
 
 const steps = [
   {
     number: "1",
-    title: "Fusion Labs",
+    title: "Stratégie et Conception",
     description:
-      "Etiam imperdiet imperdiet orci. Curabitur nisi. Fusce fermentum. Nunc nonummy metus. Phasellus orci ullamcorper ipsum rutrum nunc.",
+      "Nous commençons par une stratégie sur mesure, créant des designs web et graphiques qui captivent et engagent vos utilisateurs.",
   },
   {
     number: "2",
-    title: "Quirk Media",
+    title: "Développement",
     description:
-      "Etiam imperdiet imperdiet orci. Curabitur nisi. Fusce fermentum. Nunc nonummy metus. Phasellus orci ullamcorper ipsum rutrum nunc.",
+      "Nos équipes développent des sites web dynamiques et des applications mobiles sécurisées, performantes et intuitives.",
   },
   {
     number: "3",
-    title: "Spark Pulse",
+    title: "Contenu et Engagement",
     description:
-      "Etiam imperdiet imperdiet orci. Curabitur nisi. Fusce fermentum. Nunc nonummy metus. Phasellus orci ullamcorper ipsum rutrum nunc.",
+      "Nous produisons des vidéos percutantes et gérons vos communautés pour faire vibrer vos réseaux sociaux.",
   },
   {
     number: "4",
-    title: "Nova Web",
+    title: "Marketing et Croissance",
     description:
-      "Etiam imperdiet imperdiet orci. Curabitur nisi. Fusce fermentum. Nunc nonummy metus. Phasellus orci ullamcorper ipsum rutrum nunc.",
+      "Nous maximisons votre visibilité et votre ROI avec des stratégies SEO, des campagnes publicitaires et des newsletters efficaces.",
   },
-]
+];
 
 const WorkingProcess: React.FC = () => {
   return (
@@ -41,13 +41,16 @@ const WorkingProcess: React.FC = () => {
               Notre Processus de Travail
             </h2>
             <p className="text-gray-600 dark:text-gray-300 text-lg mb-6">
-              Nous visons à accompagner les marques de toutes tailles et industries avec des stratégies basées sur les données qui produisent des résultats concrets. Nous croyons en la création de campagnes qui non seulement génèrent des résultats, mais qui inspirent également.
+              Sprinter fusionne créativité audacieuse et précision technique
+              pour redéfinir votre expérience digitale. Nous concevons des
+              solutions qui captivent, engagent et convertissent, accélérant
+              votre croissance à chaque étape.
             </p>
             <Link
-              href="/process"
+              href="/contact"
               className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors"
             >
-              En savoir plus
+              Collaborons dès maintenant
             </Link>
           </div>
 
@@ -77,7 +80,7 @@ const WorkingProcess: React.FC = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default WorkingProcess
+export default WorkingProcess;

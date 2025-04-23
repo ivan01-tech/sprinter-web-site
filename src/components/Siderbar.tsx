@@ -1,19 +1,11 @@
-"use client"
+"use client";
 
-import {
-  X,
-  Phone,
-  Mail,
-  MapPin,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-} from "lucide-react"
-import { Dispatch, SetStateAction } from "react"
+import { X, Phone, Mail, MapPin } from "lucide-react";
+import { Dispatch, SetStateAction } from "react";
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 interface ContactSidebarProps {
-  setIsSidebarOpen: Dispatch<SetStateAction<boolean>>
+  setIsSidebarOpen: Dispatch<SetStateAction<boolean>>;
 }
 
 export const ContactSidebar: React.FC<ContactSidebarProps> = ({
@@ -30,9 +22,13 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
       </button>
 
       {/* En-tête */}
-      <h2 className="text-3xl font-bold mb-4">Contactez-nous</h2>
+      <h2 className="text-3xl font-bold mb-4">
+        Contactez Sprinter : Votre projet commence ici
+      </h2>
       <p className="text-gray-600 mb-8">
-        Prêt à faire le premier pas vers de nouvelles opportunités ? Parlons de votre projet dès maintenant.
+        Une idée ? Un projet ? Une question ? Notre équipe est prête à sprinter
+        avec vous. Contactez-nous pour un devis gratuit ou une consultation
+        personnalisée.
       </p>
 
       {/* Informations de contact */}
@@ -40,17 +36,17 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
         <InfoItem
           icon={<Phone className="text-white" size={24} />}
           title="Numéro de téléphone"
-          value="+44 204 577 0077"
+          value="+237 681 418 674"
         />
         <InfoItem
           icon={<Mail className="text-white" size={24} />}
           title="Adresse e-mail"
-          value="sprinter@gmail.com"
+          value="contact@sprinterit.com"
         />
         <InfoItem
           icon={<MapPin className="text-white" size={24} />}
-          title="Adresse du bureau"
-          value="Washington Ave, NY"
+          title="Adresse"
+          value="Douala, Cameroun"
         />
       </div>
 
@@ -58,36 +54,51 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
       <div className="mt-10">
         <p className="text-lg font-semibold mb-4">Retrouvez-nous sur</p>
         <div className="flex space-x-3">
-          {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-            <a
-              key={i}
-              href="#"
-              className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
-            >
-              <Icon size={20} />
-            </a>
-          ))}
+          <a
+            href="https://www.facebook.com/share/1Ds3NP3Xuv/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
+          >
+            <FaFacebookF size={20} />
+          </a>
+          <a
+            href="https://x.com/spinteragence?t=16m00JuMXHaRvcxRqDrqNg&s=09"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
+          >
+            <FaTwitter size={20} />
+          </a>
+          <a
+            href="https://www.instagram.com/sprinter.agence_web?igsh=YzlyTk1ODq3Zg=="
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
+          >
+            <FaInstagram size={20} />
+          </a>
         </div>
       </div>
 
       {/* Bouton d'action */}
       <div className="mt-12 flex justify-center">
         <button className="bg-yellow-400 w-40 h-40 rounded-full text-black font-bold text-center flex flex-col items-center justify-center text-lg shadow-lg hover:bg-yellow-500 transition-all">
-          Parlons-en
+          Demander un devis
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
 const InfoItem = ({
   icon,
   title,
   value,
 }: {
-  icon: React.ReactNode
-  title: string
-  value: string
+  icon: React.ReactNode;
+  title: string;
+  value: string;
 }) => (
   <div className="flex items-center space-x-4">
     <div className="bg-yellow-400 p-3 rounded-full">{icon}</div>
@@ -96,6 +107,6 @@ const InfoItem = ({
       <p className="font-semibold text-base">{value}</p>
     </div>
   </div>
-)
+);
 
-export default ContactSidebar
+export default ContactSidebar;

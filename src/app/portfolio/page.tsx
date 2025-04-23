@@ -1,15 +1,16 @@
-"use client"
+"use client";
 
-import React, { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
-import Link from "next/link"
-import CallToAction from "@/components/CallToActions"
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Link from "next/link";
+import CallToAction from "@/components/CallToActions";
+import ProjectCard from "@/components/design/CardProjekt";
 
 const PortfolioBanner: React.FC = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, once: true })
-  }, [])
+    AOS.init({ duration: 1000, once: true });
+  }, []);
 
   return (
     <div>
@@ -23,7 +24,10 @@ const PortfolioBanner: React.FC = () => {
         <div className="absolute inset-0 bg-black/50 z-0"></div>
 
         {/* Contenu centré */}
-        <div className="relative z-10 flex flex-col items-center justify-center text-center text-white max-w-4xl mx-auto" data-aos="zoom-in">
+        <div
+          className="relative z-10 flex flex-col items-center justify-center text-center text-white max-w-4xl mx-auto"
+          data-aos="zoom-in"
+        >
           <h1 className="text-4xl md:text-6xl font-bold font-unbounded mb-4">
             Portfolio
           </h1>
@@ -35,10 +39,32 @@ const PortfolioBanner: React.FC = () => {
           </Link>
         </div>
       </section>
+      <div className="w-full flex justify-center m-8">
+        <div className="grid grid-cols-1 w-full sm:grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl">
+          <ProjectCard
+            title="Website Design"
+            category="Branding Design"
+            imageUrl="/images/imagesteam.jpg"
+            link="/portfolio/website-design"
+          />
+          <ProjectCard
+            title="Website Design"
+            category="Branding Design"
+            imageUrl="/images/imagesteam.jpg"
+            link="/portfolio/website-design"
+          />
+          <ProjectCard
+            title="Website Design"
+            category="Branding Design"
+            imageUrl="/images/imagesteam.jpg"
+            link="/portfolio/website-design"
+          />
+        </div>
+      </div>
 
       <CallToAction />
     </div>
-  )
-}
+  );
+};
 
-export default PortfolioBanner
+export default PortfolioBanner;

@@ -1,30 +1,30 @@
 "use client";
 
 import { useEffect } from "react";
-import { Lightbulb, Pencil, Workflow } from "lucide-react";
+import { Lightbulb, Workflow, Rocket } from "lucide-react";
 import AOS from "aos";
 
 const steps = [
   {
     step: "ÉTAPE 1",
-    title: "Stratégie de Design",
+    title: "Conception et Stratégie",
     icon: <Lightbulb className="h-10 w-10 text-yellow-400" />,
     description:
-      "Approche stratégique complète pour garantir que le design répond aux objectifs et besoins.",
+      "Nous définissons une stratégie sur mesure avec des designs web et graphiques époustouflants, optimisés pour l'engagement et les conversions.",
   },
   {
     step: "ÉTAPE 2",
-    title: "Croquis Visuel",
-    icon: <Pencil className="h-10 w-10 text-yellow-400" />,
+    title: "Développement Technique",
+    icon: <Workflow className="h-10 w-10 text-yellow-400" />,
     description:
-      "Création des premières esquisses visuelles pour donner vie à votre concept.",
+      "Nos experts développent des sites web dynamiques et des applications mobiles sécurisées, performantes et adaptées à vos besoins.",
   },
   {
     step: "ÉTAPE 3",
-    title: "Développement",
-    icon: <Workflow className="h-10 w-10 text-yellow-400" />,
+    title: "Lancement et Croissance",
+    icon: <Rocket className="h-10 w-10 text-yellow-400" />,
     description:
-      "Mise en œuvre technique du projet selon la stratégie définie.",
+      "Nous lançons votre projet avec des stratégies marketing, des vidéos percutantes et une gestion de communauté pour maximiser votre impact.",
   },
 ];
 
@@ -39,7 +39,6 @@ export default function WorkProcess() {
         <h2 className="text-4xl md:text-5xl font-bold mb-12" data-aos="fade-up">
           Notre Processus de Travail
         </h2>
-        {/* <ProgressSteps></ProgressSteps> */}
         {/* Timeline */}
         <div className="relative mb-12" data-aos="fade-up">
           <div className="flex justify-between max-w-3xl mx-auto items-center text-sm font-semibold text-black">
@@ -50,7 +49,6 @@ export default function WorkProcess() {
               </div>
             ))}
           </div>
-          {/* <div className="absolute left-0 right-0 top-[24px] border-t border-black/70 z-[-1] max-w-3xl mx-auto" /> */}
         </div>
 
         {/* Responsive grid */}
