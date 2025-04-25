@@ -18,22 +18,16 @@ export default function Home() {
       <>
         <main className="relative min-h-screen bg-[#f9f9f9] flex flex-col items-center justify-center">
           <Hero />
+          <DigitalSolutionsSection />
+          <ExperienceSection />
           <Pricing />
           <Ticker />
           <Projects />
-
           <ClientSolutions />
-
-          <DigitalSolutionsSection></DigitalSolutionsSection>
-
-          <ExperienceSection></ExperienceSection>
-
-          <ProjectsShowcase></ProjectsShowcase>
-
-          <WorkProcess></WorkProcess>
-          <TeamSection></TeamSection>
-
-          <Testimonials></Testimonials>
+          <ProjectsShowcase />
+          <WorkProcess />
+          <TeamSection />
+          <Testimonials />
         </main>
       </>
     </>
