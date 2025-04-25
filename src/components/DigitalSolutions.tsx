@@ -19,7 +19,7 @@ export default function DigitalSolutionsSection() {
               <span className="text-sm">
                 Années
                 <br />
-                d'expérience
+                d&apos;expérience
               </span>
             </div>
           </div>
@@ -28,11 +28,11 @@ export default function DigitalSolutionsSection() {
         {/* Text section */}
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-            Propulsez Votre Marque <br /> dans l'Ère Digitale
+            Propulsez Votre Marque <br /> dans l&apos;Ère Digitale
           </h2>
           <p className="text-gray-600 mb-6">
-            Chez Sprinter, nous offrons une gamme complète de services – design,
-            développement, marketing digital et community management – conçus sur
+            Chez Sprinter, nous offrons une gamme complète de services &apos; design,
+            développement, marketing digital et community management &apos; conçus sur
             mesure pour maximiser votre impact.
           </p>
 
@@ -56,7 +56,7 @@ export default function DigitalSolutionsSection() {
               </summary>
               <div className="bg-white p-4 text-gray-700">
                 Fusionner créativité audacieuse et précision technique pour
-                redéfinir l'expérience digitale et accompagner les visionnaires
+                redéfinir l&apos;expérience digitale et accompagner les visionnaires
                 vers le succès.
               </div>
             </details>

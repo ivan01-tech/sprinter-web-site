@@ -2,7 +2,6 @@
 
 import BannerSection from "@/components/design/BannerSection";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 const ProjectDetails = () => {
@@ -22,9 +21,9 @@ const ProjectDetails = () => {
               Plateforme Nova
             </h1>
             <p className="text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
-              Création d'une plateforme digitale performante, intuitive et
-              moderne, conçue pour faciliter l'accès aux services numériques
-              d’une entreprise innovante.
+              Création d&apos;une plateforme digitale performante, intuitive et
+              moderne, conçue pour faciliter l&apos;accès aux services
+              numériques d&apos;une entreprise innovante.
             </p>
           </div>
 
