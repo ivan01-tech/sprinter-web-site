@@ -21,7 +21,7 @@ export const Footer = () => {
             />
           </Link>
           <p className="text-gray-600 dark:text-gray-400 mt-2">
-            Sprinter : Où l'innovation digitale redéfinit votre succès. Experts
+            Sprinter : Où l&apos;innovation digitale redéfinit votre succès. Experts
             en design, développement, marketing digital et community management.
           </p>
           <div className="flex gap-3 mt-4">

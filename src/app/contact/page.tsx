@@ -3,11 +3,6 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Link from "next/link";
-import CallToAction from "@/components/CallToActions";
-import Stats from "@/components/ClientSatify";
-import QualityDesign from "@/components/QualityDesign";
-import WorkingProcess from "@/components/WorkingProcess";
 import BannerSection from "@/components/design/BannerSection";
 import ContactForm from "@/components/design/Contactorm";
 

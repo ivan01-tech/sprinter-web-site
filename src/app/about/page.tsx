@@ -9,6 +9,7 @@ import Stats from "@/components/ClientSatify";
 import QualityDesign from "@/components/QualityDesign";
 import WorkingProcess from "@/components/WorkingProcess";
 import TeamSection from "@/components/TeamSections";
+import Testimonials from "@/components/Texttinomials";
 
 const PortfolioBanner: React.FC = () => {
   useEffect(() => {
@@ -49,6 +50,8 @@ const PortfolioBanner: React.FC = () => {
       <WorkingProcess></WorkingProcess>
 
       <TeamSection></TeamSection>
+
+      <Testimonials></Testimonials>
 
       <CallToAction />
     </div>

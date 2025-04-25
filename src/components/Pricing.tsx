@@ -11,7 +11,7 @@ const Pricing: React.FC = () => {
         </h2>
         <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
           Chez Sprinter, nous offrons une gamme complète de services pour
-          propulser votre marque dans l'ère digitale. Du design au
+          propulser votre marque dans l&apos;ère digitale. Du design au
           développement, du marketing digital au community management, chaque
           solution est conçue sur mesure pour maximiser votre impact.
         </p>

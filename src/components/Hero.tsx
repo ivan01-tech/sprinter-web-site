@@ -6,6 +6,7 @@ import { FaUsers } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Typewriter } from "react-simple-typewriter";
+import Image from "next/image";
 
 const Hero: React.FC = () => {
   useEffect(() => {
@@ -13,15 +14,37 @@ const Hero: React.FC = () => {
   }, []);
 
   return (
-    <section className="bg-white dark:bg-gray-900 text-black dark:text-white min-h-screen flex items-center justify-center pt-20">
-      <div className="container md:w-[90%] mx-auto px-6 flex gap-6 flex-col md:flex-row items-center justify-center">
+    <section className="relative min-h-screen pt-20 flex items-center justify-center overflow-hidden bg-black text-white">
+      {/* === Background image rotée === */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-black/10 backdrop-blur-sm z-10" />
+
+        <div className="absolute inset-0 overflow-hidden">
+          <Image
+            src="/images/banner/image_banner_2.jpg" // Assure-toi qu'elle est dans /public/images/
+            alt="Fond Hero"
+            fill
+            className="object-cover"
+            // placeholder="blur"
+            // blurDataURL="/images/banner/image_banner_2.jpg" // Assure-toi qu'elle est dans /public/images/
+            // blurDataURL="/images/background-hero.jpg"
+            priority
+          />
+        </div>
+        {/* Overlay sombre */}
+        {/* <div className="absolute inset-0 bg-black/10 backdrop-blur-[1000] z-10" /> */}
+      </div>
+
+      {/* === Contenu Hero === */}
+      <div className="relative z-20 container md:w-[90%] mx-auto px-6 flex gap-6 flex-col md:flex-row items-center justify-center text-white">
         {/* Titre dynamique */}
-        <div className="md:w-2/3 mb-10 md:mb-0" data-aos="fade-right">
-          <h1 className="text-3xl md:text-6xl text-center md:text-right font-bold leading-tight">
+        <div
+          className="md:w-2/3 mb-10 md:mb-0 text-center md:text-left"
+          data-aos="fade-right"
+        >
+          <h1 className="text-3xl md:text-6xl font-bold leading-tight">
             Sprinter : Transformez vos idées en <br />
-          </h1>
-          <h1 className="text-3xl md:text-6xl  font-bold leading-tight">
-            <span className="text-yellow-400  inline-block !text-right">
+            <span className="text-yellow-400 inline-block">
               <Typewriter
                 words={[
                   "succès digital",
@@ -48,18 +71,18 @@ const Hero: React.FC = () => {
           {/* Statistique client */}
           <div className="flex items-center mb-6">
             <div className="relative mr-4">
-              <FaUsers className="text-4xl text-yellow-400" />
-              <span className="absolute -top-2 -right-2 bg-yellow-400 text-black dark:text-white text-xs font-bold rounded-full px-2 py-1">
+              <FaUsers className="text-4xl text-yellow-400 drop-shadow-xl" />
+              <span className="absolute -top-2 -right-2 bg-yellow-400 text-black text-xs font-bold rounded-full px-2 py-1 shadow">
                 90%
               </span>
             </div>
-            <p className="text-lg font-semibold">
+            <p className="text-lg font-semibold drop-shadow">
               90% de clients satisfaits qui reviennent
             </p>
           </div>
 
           {/* Phrase courte */}
-          <p className="text-gray-400 dark:text-gray-500 mb-8 max-w-md">
+          <p className="text-gray-200 dark:text-gray-300 mb-8 max-w-md drop-shadow-md">
             Design. Développement. Stratégie. On propulse votre marque vers
             demain.
           </p>
@@ -67,7 +90,7 @@ const Hero: React.FC = () => {
           {/* Bouton */}
           <Link
             href="/contact"
-            className="bg-yellow-400 text-black dark:text-white font-semibold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors"
+            className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors shadow-lg"
           >
             Demander un devis
           </Link>
