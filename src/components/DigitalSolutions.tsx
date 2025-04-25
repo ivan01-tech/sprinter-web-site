@@ -13,14 +13,13 @@ export default function DigitalSolutionsSection() {
             objectFit="cover"
             className="rounded-3xl"
           />
-
-          <div className="p-2 bg-white absolute bottom-40 -right-10 rounded-full    flex flex-col items-center justify-center text-center shadow-xl ">
-            <div className=" bg-yellow-400 p-8 m-2 rounded-full flex flex-col items-center justify-center text-center ">
-              <span className="text-3xl font-bold">20+</span>
+          <div className="p-2 bg-white absolute bottom-40 -right-10 rounded-full flex flex-col items-center justify-center text-center shadow-xl">
+            <div className="bg-yellow-400 p-8 m-2 rounded-full flex flex-col items-center justify-center text-center">
+              <span className="text-3xl font-bold">5+</span>
               <span className="text-sm">
                 Années
                 <br />
-                d&apos;expérience
+                d'expérience
               </span>
             </div>
           </div>
@@ -29,13 +28,12 @@ export default function DigitalSolutionsSection() {
         {/* Text section */}
         <div>
           <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
-            Solutions Digitales <br /> Simples & Efficaces
+            Propulsez Votre Marque <br /> dans l'Ère Digitale
           </h2>
           <p className="text-gray-600 mb-6">
-            Nous concevons des solutions numériques sur mesure, conçues pour
-            simplifier vos processus et propulser votre activité. Grâce à plus
-            de 20 ans d&apos;expérience, nous apportons un savoir-faire fiable,
-            efficace et innovant à chaque projet.
+            Chez Sprinter, nous offrons une gamme complète de services – design,
+            développement, marketing digital et community management – conçus sur
+            mesure pour maximiser votre impact.
           </p>
 
           {/* Accordion */}
@@ -48,9 +46,8 @@ export default function DigitalSolutionsSection() {
                 Notre mission
               </summary>
               <div className="bg-white p-4 text-gray-700">
-                Offrir des solutions digitales accessibles, fiables et centrées
-                sur l&apos;humain. Nous croyons que la technologie doit servir la
-                simplicité, l&apos;efficacité et la croissance durable.
+                Accélérer votre croissance avec des solutions digitales qui
+                allient esthétique, performance et stratégie.
               </div>
             </details>
             <details className="border border-gray-300 rounded-xl overflow-hidden">
@@ -58,9 +55,9 @@ export default function DigitalSolutionsSection() {
                 Notre vision
               </summary>
               <div className="bg-white p-4 text-gray-700">
-                Être un leader reconnu en matière d&apos;innovation digitale, en
-                créant des expériences utilisateur intuitives et en contribuant
-                à la transformation digitale des entreprises à travers le monde.
+                Fusionner créativité audacieuse et précision technique pour
+                redéfinir l'expérience digitale et accompagner les visionnaires
+                vers le succès.
               </div>
             </details>
           </div>

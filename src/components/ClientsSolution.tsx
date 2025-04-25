@@ -1,58 +1,26 @@
-// src/components/ClientSolutions.tsx
 import { FaChartLine } from "react-icons/fa";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import * as React from "react";
 
-// Importer les styles de Swiper
 import "swiper/css";
 import "swiper/css/pagination";
 
 const solutions = [
   {
-    title: "Digital Marketing",
+    title: "Marketing Digital",
     description:
-      "Designed user interface contributes to a positive user experience, and a good user experience.",
+      "Stratégies SEO, campagnes publicitaires et e-mailing pour maximiser votre visibilité.",
   },
   {
-    title: "Web Development",
+    title: "Développement Web",
     description:
-      "Building responsive and scalable websites to enhance your online presence.",
+      "Sites dynamiques, sécurisés et optimisés pour tous les appareils.",
   },
   {
-    title: "UI/UX Design",
+    title: "Design Web & UX/UI",
     description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
-  },
-  {
-    title: "UI/UX Design",
-    description:
-      "Creating intuitive and visually appealing designs for better user engagement.",
+      "Interfaces visuellement époustouflantes et intuitives, optimisées pour l'engagement utilisateur.",
   },
 ];
 
@@ -60,93 +28,47 @@ const ClientSolutions: React.FC = () => {
   return (
     <section className="bg-gray-50 py-16 overflow-hidden w-full">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Titre */}
         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-          Our Latest Client Solutions
+          Nos Solutions pour Vos Ambitions
         </h2>
-
-        {/* Carrousel avec Swiper */}
         <Swiper
           modules={[Pagination]}
           spaceBetween={30}
           slidesPerView={1}
           pagination={{ clickable: true }}
           breakpoints={{
-            640: {
-              slidesPerView: 1, // Mobile (< 768px)
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: 2, // Tablette (≥ 768px)
-              spaceBetween: 30,
-            },
-            1024: {
-              slidesPerView: 3, // Desktop (≥ 1024px)
-              spaceBetween: 30,
-            },
+            640: { slidesPerView: 1, spaceBetween: 20 },
+            768: { slidesPerView: 2, spaceBetween: 30 },
+            1024: { slidesPerView: 3, spaceBetween: 30 },
           }}
           className="pb-12"
         >
           {solutions.map((solution, index) => (
-            <SwiperSlide
-              key={index}
-              style={{
-                marginBottom: 4,
-              }}
-            >
-              <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-                <div className="flex justify-center mb-4">
-                  <div className="bg-yellow-400 rounded-full p-3">
-                    <FaChartLine className="text-white text-2xl" />
+            <SwiperSlide key={index} style={{ marginBottom: 4 }}>
+              {/* <div className="w-full flex justify-center items-center"> */}
+                <div className="bg-white rounded-lg shadow-lg p-8 text-center h-full flex flex-col justify-start min-h-[320px]">
+                  <div className="flex justify-center mb-4">
+                    <div className="bg-yellow-400 rounded-full p-3">
+                      <FaChartLine className="text-white text-2xl" />
+                    </div>
                   </div>
+                  <h3 className="text-xl font-semibold mb-4">
+                    {solution.title}
+                  </h3>
+                  <p className="text-gray-600">{solution.description}</p>
                 </div>
-                <h3 className="text-xl font-semibold mb-4">{solution.title}</h3>
-                <p className="text-gray-600">{solution.description}</p>
-              </div>
+              {/* </div> */}
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-
-      {/* <Carousel className="w-full my-8">
-        <CarouselContent>
-          {solutions.map((solution, index) => (
-            <CarouselItem
-              key={index}
-              className="w-[80%] sm:basis-1/2 lg:basis-1/4" // 1 par ligne en mobile, 2 sur tablette, 4 sur desktop
-            >
-              <div className="p-1">
-                <Card>
-                  <CardContent className="flex items-center justify-center p-6">
-                    <div className="bg-white p-8 text-center">
-                      <div className="flex justify-center mb-4">
-                        <div className="bg-yellow-400 p-3">
-                          <FaChartLine className="text-white text-2xl" />
-                        </div>
-                      </div>
-                      <h3 className="text-xl font-semibold mb-4">
-                        {solution.title}
-                      </h3>
-                      <p className="text-gray-600">{solution.description}</p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-            </CarouselItem>
-          ))}
-        </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
-      </Carousel> */}
-
-      {/* Style personnalisé pour les dots de pagination */}
       <style jsx global>{`
         .swiper-pagination-bullet {
-          background: #d1d5db; /* Couleur des dots inactifs (gris) */
+          background: #d1d5db;
           opacity: 1;
         }
         .swiper-pagination-bullet-active {
-          background: #000; /* Couleur des dots actifs (noir) */
+          background: #000;
         }
       `}</style>
     </section>
@@ -154,92 +76,3 @@ const ClientSolutions: React.FC = () => {
 };
 
 export default ClientSolutions;
-
-// // src/components/ClientSolutions.tsx
-// import React, { useState } from "react";
-// import { FaChartLine } from "react-icons/fa";
-
-// const solutions = [
-//   {
-//     title: "Digital Marketing",
-//     description:
-//       "Designed user interface contributes to a positive user experience, and a good user experience.",
-//   },
-//   {
-//     title: "Web Development",
-//     description:
-//       "Building responsive and scalable websites to enhance your online presence.",
-//   },
-//   {
-//     title: "UI/UX Design",
-//     description:
-//       "Creating intuitive and visually appealing designs for better user engagement.",
-//   },
-// ];
-
-// const ClientSolutions: React.FC = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   const handleDotClick = (index: number) => {
-//     setCurrentIndex(index);
-//   };
-
-//   return (
-//     <section className="bg-gray-50 py-16">
-//       <div className="max-w-7xl mx-auto px-6">
-//         {/* Titre */}
-//         <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-//           Our Latest Client Solutions
-//         </h2>
-
-//         {/* Version Desktop : Grille */}
-//         <div className="hidden md:grid md:grid-cols-3 gap-8">
-//           {solutions.map((solution, index) => (
-//             <div
-//               key={index}
-//               className="bg-white rounded-lg shadow-lg p-8 text-center"
-//             >
-//               <div className="flex justify-center mb-4">
-//                 <div className="bg-yellow-400 rounded-full p-3">
-//                   <FaChartLine className="text-white text-2xl" />
-//                 </div>
-//               </div>
-//               <h3 className="text-xl font-semibold mb-4">{solution.title}</h3>
-//               <p className="text-gray-600">{solution.description}</p>
-//             </div>
-//           ))}
-//         </div>
-
-//         {/* Version Mobile : Carrousel */}
-//         <div className="md:hidden">
-//           <div className="bg-white rounded-lg shadow-lg p-8 text-center">
-//             <div className="flex justify-center mb-4">
-//               <div className="bg-yellow-400 rounded-full p-3">
-//                 <FaChartLine className="text-white text-2xl" />
-//               </div>
-//             </div>
-//             <h3 className="text-xl font-semibold mb-4">
-//               {solutions[currentIndex].title}
-//             </h3>
-//             <p className="text-gray-600">{solutions[currentIndex].description}</p>
-//           </div>
-
-//           {/* Dots de navigation */}
-//           <div className="flex justify-center gap-2 mt-6">
-//             {solutions.map((_, index) => (
-//               <button
-//                 key={index}
-//                 onClick={() => handleDotClick(index)}
-//                 className={`w-3 h-3 rounded-full ${
-//                   currentIndex === index ? "bg-black" : "bg-gray-300"
-//                 }`}
-//               />
-//             ))}
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default ClientSolutions;
