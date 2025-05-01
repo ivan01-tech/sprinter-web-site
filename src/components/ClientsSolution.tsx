@@ -48,7 +48,7 @@ const ClientSolutions: React.FC = () => {
               {/* <div className="w-full flex justify-center items-center"> */}
                 <div className="bg-white rounded-lg shadow-lg p-8 text-center h-full flex flex-col justify-start min-h-[320px]">
                   <div className="flex justify-center mb-4">
-                    <div className="bg-yellow-400 rounded-full p-3">
+                    <div className="bg-red-100 rounded-full p-3">
                       <FaChartLine className="text-white text-2xl" />
                     </div>
                   </div>

@@ -58,7 +58,7 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
             href="https://www.facebook.com/share/1Ds3NP3Xuv/"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
+            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-red-100 hover:text-black transition"
           >
             <FaFacebookF size={20} />
           </a>
@@ -66,7 +66,7 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
             href="https://x.com/spinteragence?t=16m00JuMXHaRvcxRqDrqNg&s=09"
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
+            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-red-100 hover:text-black transition"
           >
             <FaTwitter size={20} />
           </a>
@@ -74,7 +74,7 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
             href="https://www.instagram.com/sprinter.agence_web?igsh=YzlyTk1ODq3Zg=="
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-yellow-400 hover:text-black transition"
+            className="p-3 bg-gray-100 text-gray-700 rounded-full hover:bg-red-100 hover:text-black transition"
           >
             <FaInstagram size={20} />
           </a>
@@ -83,7 +83,7 @@ export const ContactSidebar: React.FC<ContactSidebarProps> = ({
 
       {/* Bouton d'action */}
       <div className="mt-12 flex justify-center">
-        <button className="bg-yellow-400 w-40 h-40 rounded-full text-black font-bold text-center flex flex-col items-center justify-center text-lg shadow-lg hover:bg-yellow-500 transition-all">
+        <button className="bg-red-100 w-40 h-40 rounded-full text-white font-bold text-center flex flex-col items-center justify-center text-lg shadow-lg hover:bg-red-50 transition-all">
           Demander un devis
         </button>
       </div>
@@ -101,7 +101,7 @@ const InfoItem = ({
   value: string;
 }) => (
   <div className="flex items-center space-x-4">
-    <div className="bg-yellow-400 p-3 rounded-full">{icon}</div>
+    <div className="bg-red-100 p-3 rounded-full">{icon}</div>
     <div>
       <p className="text-gray-500 text-sm">{title}</p>
       <p className="font-semibold text-base">{value}</p>

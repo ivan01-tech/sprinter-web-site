@@ -26,7 +26,7 @@ const Stats: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section className="bg-yellow-400 py-20 my-8">
+    <section className="bg-red-100 py-20 my-8">
       <div
         ref={ref}
         className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10"
@@ -42,11 +42,11 @@ const Stats: React.FC = () => {
               }
             `}
           >
-            <h3 className="text-5xl font-bold text-black font-unbounded mb-2">
+            <h3 className="text-5xl font-bold text-white font-unbounded mb-2">
               {inView ? <CountUp end={stat.number} duration={2} /> : 0}
               {stat.suffix}
             </h3>
-            <h4 className="text-xl font-semibold text-black mb-2">
+            <h4 className="text-xl font-semibold text-white mb-2">
               {stat.title}
             </h4>
           </div>

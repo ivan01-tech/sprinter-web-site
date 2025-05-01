@@ -33,7 +33,7 @@ const PortfolioBanner: React.FC = () => {
           </h1>
           <Link
             href="/"
-            className="inline-block bg-yellow-400 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-500 transition-colors"
+            className="inline-block bg-red-100 font-semibold px-6 py-2 rounded hover:bg-red-50 transition-colors text-white "
           >
             ACCUEIL / PORTFOLIO
           </Link>

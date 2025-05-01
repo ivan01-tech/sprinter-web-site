@@ -10,7 +10,7 @@ export default function ExperienceSection() {
 
   return (
     <div className="w-full flex justify-center items-center">
-      <section className="bg-yellow-400 w-full py-12 px-6 md:px-16  overflow-hidden">
+      <section className="bg-red-100 w-full py-12 px-6 md:px-16  overflow-hidden">
         {/* Image + bouton lecture */}
         <div className="max-w-6xl px-auto rounded-xl overflow-hidden shadow-lg">
           <div className="relative h-[400px] w-full">

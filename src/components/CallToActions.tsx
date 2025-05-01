@@ -4,21 +4,21 @@ import Link from "next/link";
 
 const CallToAction: React.FC = () => {
   return (
-    <section className="bg-yellow-400 py-16 my-20">
+    <section className="bg-red-100 py-16 my-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Titre */}
         <div className="md:w-1/2">
-          <h2 className="text-5xl md:text-6xl font-bold text-black font-unbounded leading-tight">
+          <h2 className="text-5xl md:text-6xl font-bold text-white font-unbounded leading-tight">
             Travaillons Ensemble
           </h2>
         </div>
 
         {/* Description et bouton */}
         <div className="md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
-          <p className="text-black text-lg mb-6 max-w-md">
+          <p className="text-white text-lg mb-6 max-w-md">
             Notre agence excelle dans le design graphique, la conception, le
             branding et les éléments visuels, offrant des solutions complètes pour
-            les besoins des entreprises sur toutes les plateformes.
+            les besoins des entreprises sur toutes les es.
           </p>
           <Link
             href="/contact"

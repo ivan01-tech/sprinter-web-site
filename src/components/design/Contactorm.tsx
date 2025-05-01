@@ -66,7 +66,7 @@ const ContactForm = () => {
               type="text"
               placeholder="Votre nom"
               {...register("name")}
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-100"
             />
             {errors.name && (
               <p className="text-red-500 text-sm mt-1">{errors.name.message}</p>
@@ -78,7 +78,7 @@ const ContactForm = () => {
               type="email"
               placeholder="Adresse email"
               {...register("email")}
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-100"
             />
             {errors.email && (
               <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
@@ -90,7 +90,7 @@ const ContactForm = () => {
               type="tel"
               placeholder="Votre téléphone"
               {...register("phone")}
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-100"
             />
             {errors.phone && (
               <p className="text-red-500 text-sm mt-1">{errors.phone.message}</p>
@@ -100,7 +100,7 @@ const ContactForm = () => {
           <div>
             <select
               {...register("subject")}
-              className="w-full border border-gray-300 rounded-md px-4 py-3 text-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 text-gray-500 focus:outline-none focus:ring-2 focus:ring-red-100"
             >
               <option value="">Choisir un sujet</option>
               <option value="project">Nouveau projet</option>
@@ -117,7 +117,7 @@ const ContactForm = () => {
               placeholder="Écrivez votre message"
               rows={4}
               {...register("message")}
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-red-100"
             ></textarea>
             {errors.message && (
               <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
@@ -128,8 +128,8 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={isSubmitting}
-              className={`bg-yellow-400 text-black font-semibold py-3 px-8 rounded-full transition duration-300 ${
-                isSubmitting ? "opacity-60 cursor-not-allowed" : "hover:bg-yellow-500"
+              className={`bg-red-100 text-black font-semibold py-3 px-8 rounded-full transition duration-300 ${
+                isSubmitting ? "opacity-60 cursor-not-allowed" : "hover:bg-re-50"
               }`}
             >
               {isSubmitting ? "Envoi en cours..." : "ENVOYER LE MESSAGE"}

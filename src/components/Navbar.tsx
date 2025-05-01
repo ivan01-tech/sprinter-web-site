@@ -27,9 +27,9 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold">
           <Image
-            src="/images/logos/logo-light.png"
+            src="/images/logos/logo-dark.png"
             alt="Logo Sprinter"
-            width={120}
+            width={200}
             height={120}
             className="rounded-full object-cover"
           />
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
 
           <button
             onClick={() => setIsSidebarOpen(true)}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-black shadow-md hover:bg-yellow-500 transition-all duration-300 ease-in-out"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-red-100 text-white shadow-md hover:bg-red-50 transition-all duration-300 ease-in-out"
             aria-label="Ouvrir le menu de contact"
           >
             <FaBars className="text-lg" />

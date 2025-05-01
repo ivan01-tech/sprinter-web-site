@@ -15,7 +15,7 @@ export const Footer = () => {
             <Image
               src="/images/logos/logo_dark_.png"
               alt="Logo Sprinter"
-              width={120}
+              width={200}
               height={120}
               className="rounded-full object-cover"
             />
@@ -57,37 +57,37 @@ export const Footer = () => {
           <h3 className="text-lg font-semibold mb-2">Nos Services</h3>
           <ul className="text-gray-600 dark:text-gray-400 space-y-1">
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Design Web & UX/UI
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Développement Web
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Développement Mobile
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Graphisme & Branding
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Montage Vidéo
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Marketing Digital
               </Link>
             </li>
             <li>
-              <Link href="/services" className="hover:text-yellow-500 transition-colors">
+              <Link href="/services" className="hover:text-red-50 transition-colors">
                 Community Management
               </Link>
             </li>
@@ -99,22 +99,22 @@ export const Footer = () => {
           <h3 className="text-lg font-semibold mb-2">Ressources</h3>
           <ul className="text-gray-600 dark:text-gray-400 space-y-1">
             <li>
-              <Link href="/about" className="hover:text-yellow-500 transition-colors">
+              <Link href="/about" className="hover:text-red-50 transition-colors">
                 À Propos
               </Link>
             </li>
             <li>
-              <Link href="/portfolio" className="hover:text-yellow-500 transition-colors">
+              <Link href="/portfolio" className="hover:text-red-50 transition-colors">
                 Portfolio
               </Link>
             </li>
             <li>
-              <Link href="/pricing" className="hover:text-yellow-500 transition-colors">
+              <Link href="/pricing" className="hover:text-red-50 transition-colors">
                 Grille des Prix
               </Link>
             </li>
             <li>
-              <Link href="/blog" className="hover:text-yellow-500 transition-colors">
+              <Link href="/blog" className="hover:text-red-50 transition-colors">
                 Blog & Actualités
               </Link>
             </li>
@@ -136,10 +136,10 @@ export const Footer = () => {
       <div className="mt-10 border-t pt-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 dark:text-gray-400">
         <p>© 2025 SPRINTER</p>
         <div className="flex gap-4 mt-2 md:mt-0">
-          <Link href="/terms" className="hover:text-yellow-500 transition">
+          <Link href="/terms" className="hover:text-red-50 transition">
             Termes et Conditions
           </Link>
-          <Link href="/privacy" className="hover:text-yellow-500 transition">
+          <Link href="/privacy" className="hover:text-red-50 transition">
             Politique de Confidentialité
           </Link>
         </div>

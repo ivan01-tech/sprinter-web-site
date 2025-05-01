@@ -40,7 +40,7 @@ const BlogPreview: React.FC = () => {
           </h1>
           <Link
             href="/"
-            className="inline-block bg-yellow-400 text-black font-semibold px-6 py-2 rounded hover:bg-yellow-500 transition-colors"
+            className="inline-block bg-red-100 text-white font-semibold px-6 py-2 rounded hover:bg-red-50 transition-colors"
           >
             ACCUEIL / A PROPOS
           </Link>
@@ -74,7 +74,7 @@ const BlogPreview: React.FC = () => {
                 </div>
                 <Link
                   href="/blog/graphic-design"
-                  className="bg-yellow-400 text-black font-semibold py-3 px-6 rounded-full hover:bg-yellow-500 transition-colors inline-block"
+                  className="bg-red-100 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-50 transition-colors inline-block"
                 >
                   Lire plus
                 </Link>
@@ -92,7 +92,7 @@ const BlogPreview: React.FC = () => {
                 <li key={index}>
                   <Link
                     href={`/blog/category/${category.name.toLowerCase()}`}
-                    className="flex justify-between text-black dark:text-white hover:text-yellow-400 dark:hover:text-yellow-400 transition-colors"
+                    className="flex justify-between text-black dark:text-white hover:text-red-100 dark:hover:text-red-100 transition-colors"
                   >
                     <span>{category.name}</span>
                     <span>({category.count.toString().padStart(2, "0")})</span>
