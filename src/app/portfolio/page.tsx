@@ -42,20 +42,27 @@ const PortfolioBanner: React.FC = () => {
       <div className="w-full flex justify-center m-8">
         <div className="grid grid-cols-1 w-full sm:grid-cols-1 lg:grid-cols-2 gap-6 max-w-4xl">
           <ProjectCard
-            title="Website Design"
-            category="Branding Design"
+            title="Dévéloppement Web"
+            category="Diférent site internet"
             imageUrl="/images/imagesteam.jpg"
             link="/portfolio/website-design"
           />
           <ProjectCard
-            title="Website Design"
-            category="Branding Design"
+            title="Dévéloppement Mobile"
+            category="Application mobile (Android & IOS)"
             imageUrl="/images/imagesteam.jpg"
             link="/portfolio/website-design"
           />
           <ProjectCard
-            title="Website Design"
-            category="Branding Design"
+            title="Design UI & UI"
+            category="Design web & Mobile"
+            imageUrl="/images/imagesteam.jpg"
+            link="/portfolio/website-design"
+          />
+
+          <ProjectCard
+            title="Marketing Digital"
+            category="Présence en ligne"
             imageUrl="/images/imagesteam.jpg"
             link="/portfolio/website-design"
           />
