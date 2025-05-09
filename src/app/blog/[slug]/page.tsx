@@ -2,11 +2,11 @@ import { notFound } from "next/navigation";
 import BannerSection from "@/components/design/BannerSection";
 import { getAllPostSlugs, getPostData } from "@/lib/post";
 import Image from "next/image";
-
+// Définir Props avec params comme une promesse
 type Props = {
-  params: {
+  params: Promise<{
     slug: string;
-  };
+  }>;
 };
 
 export async function generateStaticParams() {
@@ -14,7 +14,9 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPostPage({ params }: Props) {
-  const post = await getPostData(params.slug);
+  // Attendre params pour accéder à slug
+  const { slug } = await params;
+  const post = await getPostData(slug);
 
   if (!post) return notFound();
 
@@ -59,7 +61,6 @@ export default async function BlogPostPage({ params }: Props) {
     </>
   );
 }
-
 
 // import { notFound } from "next/navigation";
 // import BannerSection from "@/components/design/BannerSection";
