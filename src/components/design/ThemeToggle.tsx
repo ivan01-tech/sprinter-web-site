@@ -1,5 +1,5 @@
 // src/components/ThemeToggle.tsx
-"use client";
+
 
 import { useTheme } from "@/contexts/Themecontext";
 import React from "react";
