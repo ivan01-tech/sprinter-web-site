@@ -35,7 +35,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <h4 className="text-lg font-bold">{title}</h4>
               <span className="text-sm text-gray-500">{category}</span>
             </div>
-            <FaArrowRight className="text-red-100" />
+            <FaArrowRight className="text-yellow-400" />
           </div>
         </Link>
       </div>

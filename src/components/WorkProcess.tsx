@@ -8,21 +8,21 @@ const steps = [
   {
     step: "ÉTAPE 1",
     title: "Conception et Stratégie",
-    icon: <Lightbulb className="h-10 w-10 text-red-100" />,
+    icon: <Lightbulb className="h-10 w-10 text-yellow-400" />,
     description:
       "Nous définissons une stratégie sur mesure avec des designs web et graphiques époustouflants, optimisés pour l'engagement et les conversions.",
   },
   {
     step: "ÉTAPE 2",
     title: "Développement Technique",
-    icon: <Workflow className="h-10 w-10 text-red-100" />,
+    icon: <Workflow className="h-10 w-10 text-yellow-400" />,
     description:
       "Nos experts développent des sites web dynamiques et des applications mobiles sécurisées, performantes et adaptées à vos besoins.",
   },
   {
     step: "ÉTAPE 3",
     title: "Lancement et Croissance",
-    icon: <Rocket className="h-10 w-10 text-red-100" />,
+    icon: <Rocket className="h-10 w-10 text-yellow-400" />,
     description:
       "Nous lançons votre projet avec des stratégies marketing, des vidéos percutantes et une gestion de communauté pour maximiser votre impact.",
   },
