@@ -1,5 +1,6 @@
 "use client";
 
+
 import React, { useEffect } from "react";
 import Link from "next/link";
 import { FaUsers } from "react-icons/fa";
@@ -44,7 +45,7 @@ const Hero: React.FC = () => {
         >
           <h1 className="text-3xl md:text-6xl font-bold leading-tight">
             Sprinter : Transformez vos idées en <br />
-            <span className="text-red-100 inline-block">
+            <span className="text-orange-100 inline-block">
               <Typewriter
                 words={[
                   "succès digital",
@@ -71,8 +72,8 @@ const Hero: React.FC = () => {
           {/* Statistique client */}
           <div className="flex items-center mb-6">
             <div className="relative mr-4">
-              <FaUsers className="text-4xl text-red-100 drop-shadow-xl" />
-              <span className="absolute -top-2 -right-2 bg-red-100 text-white text-xs font-bold rounded-full px-2 py-1 shadow">
+              <FaUsers className="text-4xl text-orange-100 drop-shadow-xl" />
+              <span className="absolute -top-2 -right-2 bg-orange-100 text-white text-xs font-bold rounded-full px-2 py-1 shadow">
                 90%
               </span>
             </div>
@@ -90,7 +91,7 @@ const Hero: React.FC = () => {
           {/* Bouton */}
           <Link
             href="/contact"
-            className="bg-red-100 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-50 transition-colors shadow-lg"
+            className="bg-orange-100 text-white font-semibold py-3 px-6 rounded-full hover:bg-orange-50 transition-colors shadow-lg"
           >
             Demander un devis
           </Link>

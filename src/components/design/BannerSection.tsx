@@ -1,7 +1,5 @@
-"use client";
-
-import React from "react";
 import Link from "next/link";
+import React from "react";
 
 interface BannerSectionProps {
   title: string;
@@ -26,17 +24,14 @@ const BannerSection: React.FC<BannerSectionProps> = ({
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50 z-0" />
 
-      {/* Centered content */}
-      <div
-        className="relative z-10 flex flex-col items-center justify-center text-center text-white max-w-4xl mx-auto"
-        data-aos="zoom-in"
-      >
+      {/* Contenu centré */}
+      <div className="relative z-10 flex flex-col items-center justify-center text-center text-white max-w-4xl mx-auto">
         <h1 className="text-4xl md:text-6xl font-bold font-unbounded mb-4">
           {title}
         </h1>
         <Link
           href={linkHref}
-          className="inline-block bg-red-100 text-white  font-semibold px-6 py-2 rounded hover:bg-red-50 transition-colors"
+          className="inline-block bg-yellow-400 text-white font-semibold px-6 py-2 rounded"
         >
           {linkLabel}
         </Link>

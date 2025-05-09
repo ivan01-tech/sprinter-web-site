@@ -1,4 +1,5 @@
 "use client";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import { FiMenu, FiX } from "react-icons/fi"; // Icônes de react-icons
@@ -58,7 +59,7 @@ const Navbar: React.FC = () => {
 
           <button
             onClick={() => setIsSidebarOpen(true)}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-red-100 text-white shadow-md hover:bg-red-50 transition-all duration-300 ease-in-out"
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-yellow-400 text-white shadow-md hover:bg-red-50 transition-all duration-300 ease-in-out"
             aria-label="Ouvrir le menu de contact"
           >
             <FaBars className="text-lg" />

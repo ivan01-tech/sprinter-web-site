@@ -14,7 +14,7 @@ export default function DigitalSolutionsSection() {
             className="rounded-3xl"
           />
           <div className="p-2 bg-white absolute bottom-40 -right-10 rounded-full flex flex-col items-center justify-center text-center shadow-xl">
-            <div className="bg-red-100 p-8 m-2 rounded-full flex flex-col items-center justify-center text-center">
+            <div className="bg-yellow-400 p-8 m-2 rounded-full flex flex-col items-center justify-center text-center">
               <span className="text-3xl font-bold text-white">5+</span>
               <span className="text-sm text-white">
                 Années
@@ -40,9 +40,9 @@ export default function DigitalSolutionsSection() {
           <div className="space-y-4">
             <details
               open
-              className="border border-red-100 rounded-xl overflow-hidden"
+              className="border border-yellow-400 rounded-xl overflow-hidden"
             >
-              <summary className="bg-red-100 px-4 py-3 cursor-pointer font-semibold text-lg text-white">
+              <summary className="bg-yellow-400 px-4 py-3 cursor-pointer font-semibold text-lg text-white">
                 Notre mission
               </summary>
               <div className="bg-white p-4 text-gray-700">

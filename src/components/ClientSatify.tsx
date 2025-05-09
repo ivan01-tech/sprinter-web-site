@@ -1,3 +1,4 @@
+
 "use client";
 
 import React from "react";
@@ -26,7 +27,7 @@ const Stats: React.FC = () => {
   const { ref, inView } = useInView({ triggerOnce: true });
 
   return (
-    <section className="bg-red-100 py-20 my-8">
+    <section className="bg-yellow-400 py-20 my-8">
       <div
         ref={ref}
         className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-10"
