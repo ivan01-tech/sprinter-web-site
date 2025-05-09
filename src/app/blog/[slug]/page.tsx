@@ -39,7 +39,7 @@ export default async function BlogPostPage(props: {
   return (
     <>
       <BannerSection
-        title="DETAILS BLOG"
+        title={post.title}
         linkLabel="ACCUEIL / BLOG"
         linkHref="/"
         backgroundImage="/images/image_banner.jpg"
