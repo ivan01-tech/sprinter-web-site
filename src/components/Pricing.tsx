@@ -64,7 +64,7 @@ const Pricing: React.FC = () => {
             </ul>
             <a
               href="/contact"
-              className="bg-yellow-400 text-white rounded-full px-6 py-3 hover:bg-red-50 transition"
+              className="bg-red-400 text-white rounded-full px-6 py-3 hover:bg-red-50 transition"
             >
               Obtenir un devis gratuit
             </a>

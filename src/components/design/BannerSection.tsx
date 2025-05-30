@@ -31,7 +31,7 @@ const BannerSection: React.FC<BannerSectionProps> = ({
         </h1>
         <Link
           href={linkHref}
-          className="inline-block bg-yellow-400 text-white font-semibold px-6 py-2 rounded"
+          className="inline-block bg-red-400 text-white font-semibold px-6 py-2 rounded"
         >
           {linkLabel}
         </Link>

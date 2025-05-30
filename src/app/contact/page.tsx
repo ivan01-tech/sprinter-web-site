@@ -30,17 +30,17 @@ const PortfolioBanner: React.FC = () => {
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {[
             {
-              icon: <FaPhoneAlt className="text-yellow-400 text-xl" />,
+              icon: <FaPhoneAlt className="text-red-400 text-xl" />,
               label: "Numéro de téléphone",
               value: "+237 681 418 674",
             },
             {
-              icon: <FaEnvelope className="text-yellow-400 text-xl" />,
+              icon: <FaEnvelope className="text-red-400 text-xl" />,
               label: "Adresse e-mail",
               value: "contact@sprinterit.com",
             },
             {
-              icon: <FaMapMarkerAlt className="text-yellow-400 text-xl" />,
+              icon: <FaMapMarkerAlt className="text-red-400 text-xl" />,
               label: "Adresse",
               value: "Douala, Cameroun",
             },

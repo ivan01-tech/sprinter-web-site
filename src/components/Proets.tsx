@@ -84,7 +84,7 @@ export default function ProjectsCarousel() {
                   className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="bg-yellow-400 h-14 w-14 rounded-full flex items-center justify-center">
+                  <div className="bg-red-400 h-14 w-14 rounded-full flex items-center justify-center">
                     <ArrowUpRight className="text-black w-6 h-6" />
                   </div>
                 </div>

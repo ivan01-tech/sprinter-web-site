@@ -10,7 +10,7 @@ const Hero2: React.FC = () => {
       <div className="container mx-auto px-6">
         <div className="relative">
           <motion.div
-            className="absolute left-0 top-0 h-full w-12 bg-yellow-400 hidden md:block"
+            className="absolute left-0 top-0 h-full w-12 bg-red-400 hidden md:block"
             initial={{ height: 0 }}
             animate={{ height: "100%" }}
             transition={{ duration: 1 }}

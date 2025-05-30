@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const CallToAction: React.FC = () => {
   return (
-    <section className="bg-yellow-400 py-16 my-20">
+    <section className="bg-red-400 py-16 my-20">
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-8">
         {/* Titre */}
         <div className="md:w-1/2">

@@ -83,7 +83,7 @@ const QualityDesign: React.FC = () => {
           </ul>
           <Link
             href="/contact"
-            className="bg-yellow-400 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-50 transition-colors"
+            className="bg-red-400 text-white font-semibold py-3 px-6 rounded-full hover:bg-red-50 transition-colors"
           >
             Collaborons dès maintenant
           </Link>

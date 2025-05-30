@@ -73,7 +73,7 @@ const Testimonials: React.FC = () => {
         <div className="md:w-1/2 flex flex-col items-center md:items-start">
           {/* Notation et Source */}
           <div className="flex items-center gap-4 mb-6">
-            <div className="flex items-center bg-yellow-400 text-white dark:text-white font-bold rounded-full px-4 py-2">
+            <div className="flex items-center bg-red-400 text-white dark:text-white font-bold rounded-full px-4 py-2">
               <FaStar className="text-lg mr-2" />
               {rating.toFixed(1)}
             </div>
